@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Books Store</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <section class="form_area pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="room_title pb-4">
+            <h2>Room's Information</h2>
+          </div>
+        </div>
+        <div class="col-4">
+          <h5>Room's Size (Ft)</h5>
+          <select name="room_size" id="room_size" class="form-control">
+            <option value="">Select Option</option>
+            <option value="1">22 x 28</option>
+            <option value="2">16 x 20</option>
+            <option value="3">12 x 18</option>
+            <option value="4">10 x 12</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <div class="or">
+            <p>or</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="custom_rs_area">
+            <label for="custom_rs">
+              <input type="checkbox" id="custom_rs">
+              Choose a custom size
+            </label>
+            <div class="custom_room_size">
+              <input type="text" placeholder="Width (Ft)" id="room_width" class="form-control mb-2"> 
+              <input type="text" placeholder="Height (Ft)" id="room_height" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-12">
+          <div class="tile_title pb-4">
+            <h2>Tile's Information</h2>
+          </div>
+        </div>
+        <div class="col-4">
+          <label for="">Width</label>
+          <input type="number" placeholder="Width (IN)" id="tile_width" class="form-control">
+        </div>
+        <div class="col-4">
+          <label for="">Height</label>
+          <input type="number" placeholder="Height (IN)" id="tile_height" class="form-control">
+        </div>
+        <div class="col-4">
+          <label for="">Tile Price (Per Piece)</label>
+          <input type="number" placeholder="Price($)" id="tile_price" class="form-control">
+        </div>
+        <div class="col-12 mt-4">
+          <button id="calculation" class="btn btn-info">Result</button>
+        </div>
+        <div id="err_msg">Please fill the fields!</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="result_area pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Your calculation</h2>
+          <div id="show_result">
+            <h3>Total tile you need: <span id="total_tile"></span></h3>
+            <h4>You will pay: $<span id="total_price"></span></h4>
+          </div>
+          <a href="" class="btn btn-primary mt-3">Calculate Again</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
+ </body>
+ </html>
+ 
